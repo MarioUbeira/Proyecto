@@ -1,0 +1,330 @@
+.separador {
+  text-align: center;
+  border-bottom: 1px solid rgba(158, 158, 158, 0.308);
+  /* Agrega una línea de separación en la parte superior */
+  margin-top: 0.5vw;
+  margin-bottom: 0.5vw;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: bolder;
+}
+
+.alert {
+  padding: 1rem;
+  border: 1px solid transparent;
+  border-radius: 0.25rem;
+}
+
+.alert-success {
+  color: #155724;
+  background-color: #d4edda;
+  border-color: #c3e6cb;
+}
+
+.alerta[role="alert"] {
+  text-align: center;
+}
+
+/*CATEGORIAS*/
+
+.categorias {
+  display: flex;
+  /* Habilita Flexbox */
+  flex-wrap: wrap;
+  /* Permite que los elementos se ajusten automáticamente a la pantalla */
+  justify-content: center;
+  /* Alinea los elementos en el centro del contenedor */
+  align-items: center;
+  /* Centra los elementos verticalmente */
+}
+
+/* Estilos para los elementos dentro del contenedor */
+.item {
+  flex: 1;
+  /* Permite que los elementos ocupen el mismo espacio */
+  margin: 10px;
+  /* Agrega margen entre los elementos */
+  display: flex;
+  /* Establece que los elementos dentro del contenedor se dispongan en línea */
+  justify-content: center;
+  /* Centra los elementos en el eje horizontal */
+  flex-direction: column;
+  /* Establece que los elementos dentro del contenedor se dispongan en columnas */
+  align-items: center;
+  /* Centra los elementos en el eje vertical */
+  text-align: center;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: bolder;
+}
+
+.item img {
+  width: 40%;
+}
+
+.itA {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  color: #333;
+}
+
+.item:hover {
+  cursor: pointer;
+  background-color: rgba(158, 158, 158, 0.308);
+}
+
+.compromisos {
+  background-color: #e0e0e0;
+  display: flex;
+  /* Habilita Flexbox */
+  flex-wrap: wrap;
+  /* Permite que los elementos se ajusten automáticamente a la pantalla */
+  justify-content: center;
+  /* Alinea los elementos en el centro del contenedor */
+  align-items: center;
+  /* Centra los elementos verticalmente */
+}
+
+.compromiso {
+  padding: 0.6vw;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: bolder;
+  color: #0d0335;
+  display: flex;
+  /* Establece que los elementos dentro del contenedor se dispongan en línea */
+  justify-content: center;
+  /* Centra los elementos en el eje horizontal */
+  flex-direction: column;
+  /* Establece que los elementos dentro del contenedor se dispongan en columnas */
+  align-items: center;
+  /* Centra los elementos en el eje vertical */
+  text-align: center;
+}
+
+.comp {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.compromiso img {
+  width: 7vw;
+}
+
+.contenedorRevista {
+  display: flex;
+  background-color: #00b3aa26;
+}
+
+.contenedorRevista img {
+  transform: rotate(-12deg);
+  height: 21vw;
+  width: 18vw;
+  margin-right: 3%;
+  box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.5);
+}
+
+.textoRev {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  margin: 2%;
+  text-align: justify;
+}
+
+.textoRev h3 {
+  background-color: white;
+  padding: 2%;
+}
+
+.textoRev h3:hover {
+  background-color: rgb(222, 222, 222);
+}
+
+.textoRev button {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: bolder;
+  background-color: #00b3aa;
+  /* Green */
+  border: none;
+  color: white;
+  padding: 1%;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 5px;
+}
+
+.textoRev button:hover {
+  transition: background-color .8s;
+  background-color: #018273;
+}
+
+.contenedor_productos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.producto {
+  flex: 1 0 calc(33.33% - 20px);
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: bolder;
+}
+
+.producto img {
+  height: auto;
+  width: 100%;
+  max-width: 100%;
+}
+
+.button {
+  display: flex;
+}
+
+.button button,.trollButton {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: bolder;
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 5px;
+  margin: 1%;
+}
+
+.button button:hover {
+  transition: background-color .8s;
+}
+
+.troll {
+  display: flex;
+  width: 70%;
+}
+
+.fav {
+  width: 15%;
+  margin-left: 1%;
+}
+
+.trollButton {
+  height: 100%;
+  background-color: #00b3aa;
+}
+
+.favButton {
+  width: 100%;
+  height: 100%;
+  background-color: crimson;
+}
+
+.favButton:hover {
+  background-color: rgb(185, 17, 51);
+}
+
+.trollButton:hover {
+  background-color: #018273;
+}
+
+.producto label {
+  padding: 1%;
+}
+
+/* Estilos para Pantallas de PC */
+@media (min-width: 1090px) {
+  .comp p {
+    visibility: hidden;
+  }
+
+  .comp:hover p {
+    visibility: visible;
+  }
+
+  .contenedorRevista {
+    margin-left: 20%;
+    margin-right: 20%;
+  }
+
+  .compromiso {
+    width: 30%;
+  }
+}
+
+@media (min-width: 700px) and (max-width: 1024px) {
+  .categorias {
+    flex-wrap: wrap;
+    /* Evita que los elementos se ajusten automáticamente */
+  }
+
+  .item {
+    flex: 0 0 30%;
+  }
+
+  .contenedorRevista {
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+
+  .contenedorRevista img {
+    height: 28vw;
+    width: 25vw;
+  }
+
+  .compromiso {
+    width: 30%;
+  }
+
+}
+
+/* Estilos para dispositivos móviles */
+@media (max-width: 768px) {
+  .categorias {
+    flex-wrap: wrap;
+    /* Evita que los elementos se ajusten automáticamente */
+  }
+
+  .item {
+    flex: 0 0 30%;
+  }
+
+  .contenedorRevista {
+    flex-direction: column;
+    align-items: center;
+    margin: 1%;
+  }
+
+  .contenedorRevista img {
+    height: 40vw;
+    width: 35vw;
+    margin-top: 5%;
+  }
+
+  .compromisos {
+    flex-direction: column;
+  }
+
+  .compromiso {
+    flex: 1;
+    width: 55%;
+  }
+
+  .compromiso img {
+    width: 20vw;
+  }
+
+  .comp p {
+    visibility: hidden;
+    height: 0px;
+  }
+}

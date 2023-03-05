@@ -1,0 +1,232 @@
+.contCats {
+    display: flex;
+}
+
+#toggleMenuCat {
+  position: fixed;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  top: 55px; 
+  left: 0;
+  height: 35px;
+  z-index: 99995;
+  border: none;
+  background-color: #e6f8f7;
+  border-radius: 5px 0 0 5px;
+  color: #333;
+  font-weight: bold;
+  font-size: 16px;
+  padding: 0 10px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+#toggleMenuCat:hover {
+  background-color: #d9f1ef;
+}
+
+.menuCat {
+  position: fixed;
+  top: 90px; 
+  left: -400px;
+  background-color: #fff;
+  transition: all 0.3s ease-in-out;
+  z-index: 998;
+  width: 400px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+}
+
+
+.menuCat.active {
+  left: 0;
+}
+
+.categoria {
+  display: block;
+  background-color: #e6f8f7; 
+  text-align: center;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: bold;
+  border: none;
+  width: 100%;
+  padding: 10px 0;
+  text-transform: uppercase;
+  color: #555;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+
+.categoria:hover {
+  background-color: #f2f2f2;
+  color: #333;
+}
+
+
+@media (min-width: 1090px) {
+  .categoria {
+    font-size: 1vw;
+    height: 6vh;
+  }
+  
+  #toggleMenuCat {
+    width: 20vw;
+  }
+  .menuCat {
+    width: 20vw;
+  }
+  .productos {
+    margin-top: 3%;
+  }
+}
+
+@media (min-width: 700px) and (max-width: 1090px) {
+  .categoria {
+    font-size: 1.3vw;
+    height: 5vh;
+  }
+  #toggleMenuCat {
+    width: 25vw;
+  }
+  .menuCat {
+    width: 25vw;
+  }
+  .productos {
+    margin-top: 5%;
+  }
+}
+
+@media (max-width: 700px) {
+  .categoria {
+    font-size: 3.8vw;
+    height: 4vh;
+  }
+  #toggleMenuCat {
+    width: 80vw;
+    top: 70;
+  }
+  .menuCat {
+    width: 80vw;
+    top: 105;
+  }
+  .productos {
+    margin-top: 10%;
+  }
+}
+
+.categoria:hover{
+    background-color: #00b3aa;
+    cursor: pointer;
+}
+
+.productos {
+    display: flex;
+    /* Habilita Flexbox */
+    flex-wrap: wrap;
+    /* Permite que los elementos se ajusten automáticamente a la pantalla */
+    justify-content: center;
+    /* Alinea los elementos en el centro del contenedor */
+    align-items: center;
+    /* Centra los elementos verticalmente */
+    width: 100%;
+  }
+  
+  /* Estilos para los elementos dentro del contenedor */
+  .producto {
+    margin: 0.25%;
+    /* Agrega margen entre los elementos */
+    margin-bottom: 0.5%;
+    display: flex;
+    /* Establece que los elementos dentro del contenedor se dispongan en línea */
+    justify-content: center;
+    /* Centra los elementos en el eje horizontal */
+    flex-direction: column;
+    /* Establece que los elementos dentro del contenedor se dispongan en columnas */
+    align-items: center;
+    /* Centra los elementos en el eje vertical */
+    text-align: center;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    font-weight: bolder;
+  }
+
+  @media (min-width: 1025px) {
+    .producto {
+        width: 24%;
+    }
+  }
+
+  @media (min-width: 769px) and (max-width: 1024px) {
+    .producto {
+        width: 32%;
+    }  
+}
+
+  @media (max-width: 768px) {
+    .producto {
+        width: 85%;
+    }
+  }
+
+  .producto label {
+    padding: 1%;
+  }
+
+  .producto img {
+    width: 100%;
+  }
+  
+  .button {
+    display: flex;
+  }
+  
+  .button button,.trollButton {
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    font-weight: bolder;
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 5px;
+    margin: 1%;
+  }
+
+  .button button:hover {
+    transition: background-color .8s;
+  }
+
+  .troll {
+    display: flex;
+    width: 70%;
+  }
+  
+  .fav {
+    width: 15%;
+    margin-left: 1%;
+  }
+  
+  .trollButton {
+    height: 100%;
+    background-color: #00b3aa;
+  }
+  
+  .favButton {
+    width: 100%;
+    height: 100%;
+    background-color: crimson;
+  }
+
+  .favButton:hover {
+    background-color: rgb(185, 17, 51);
+  }
+
+  .trollButton:hover {
+    background-color: #018273;
+  }
+
+  .errorMsg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10%;
+    font-size: 30px;
+  }

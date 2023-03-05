@@ -1,0 +1,264 @@
+[03-Feb-2023 09:32:09 Europe/Berlin] prueba de error
+[03-Feb-2023 09:32:09 Europe/Berlin] prueba de error
+[03-Feb-2023 09:32:10 Europe/Berlin] prueba de error
+[03-Feb-2023 10:17:06 Europe/Berlin] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in D:\xampp\htdocs\mvc\View\login_view.php on line 11
+[03-Feb-2023 10:17:06 Europe/Berlin] PHP Stack trace:
+[03-Feb-2023 10:17:06 Europe/Berlin] PHP   1. {main}() D:\xampp\htdocs\mvc\index.php:0
+[03-Feb-2023 10:17:06 Europe/Berlin] PHP   2. require_once() D:\xampp\htdocs\mvc\index.php:19
+[03-Feb-2023 10:17:06 Europe/Berlin] PHP   3. require_once() D:\xampp\htdocs\mvc\Controller\login_controlador.php:6
+[03-Feb-2023 10:17:06 Europe/Berlin] PHP   4. session_start() D:\xampp\htdocs\mvc\View\login_view.php:11
+[03-Feb-2023 10:22:21 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "Login_model" not found in D:\xampp\htdocs\mvc\Controller\login_controlador.php:5
+Stack trace:
+#0 D:\xampp\htdocs\mvc\index.php(19): require_once()
+#1 {main}
+  thrown in D:\xampp\htdocs\mvc\Controller\login_controlador.php on line 5
+[03-Feb-2023 10:22:52 Europe/Berlin] PHP Warning:  require_once(View/categorias_view.php): Failed to open stream: No such file or directory in D:\xampp\htdocs\mvc\Controller\categorias_controlador.php on line 8
+[03-Feb-2023 10:22:52 Europe/Berlin] PHP Stack trace:
+[03-Feb-2023 10:22:52 Europe/Berlin] PHP   1. {main}() D:\xampp\htdocs\mvc\index.php:0
+[03-Feb-2023 10:22:52 Europe/Berlin] PHP   2. require_once() D:\xampp\htdocs\mvc\index.php:18
+[03-Feb-2023 10:22:52 Europe/Berlin] PHP Fatal error:  Uncaught Error: Failed opening required 'View/categorias_view.php' (include_path='D:\xampp\php\PEAR') in D:\xampp\htdocs\mvc\Controller\categorias_controlador.php:8
+Stack trace:
+#0 D:\xampp\htdocs\mvc\index.php(18): require_once()
+#1 {main}
+  thrown in D:\xampp\htdocs\mvc\Controller\categorias_controlador.php on line 8
+[03-Feb-2023 10:23:28 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "LoginModel" not found in D:\xampp\htdocs\mvc\Controller\login_controlador.php:5
+Stack trace:
+#0 D:\xampp\htdocs\mvc\index.php(19): require_once()
+#1 {main}
+  thrown in D:\xampp\htdocs\mvc\Controller\login_controlador.php on line 5
+[03-Feb-2023 13:15:10 Europe/Berlin] PHP Warning:  require(../Model/login_modelo.php): Failed to open stream: No such file or directory in D:\xampp\htdocs\mvc\Controller\login_controlador.php on line 3
+[03-Feb-2023 13:15:10 Europe/Berlin] PHP Stack trace:
+[03-Feb-2023 13:15:10 Europe/Berlin] PHP   1. {main}() D:\xampp\htdocs\mvc\index.php:0
+[03-Feb-2023 13:15:10 Europe/Berlin] PHP   2. require_once() D:\xampp\htdocs\mvc\index.php:28
+[03-Feb-2023 13:15:10 Europe/Berlin] PHP Fatal error:  Uncaught Error: Failed opening required '../Model/login_modelo.php' (include_path='D:\xampp\php\PEAR') in D:\xampp\htdocs\mvc\Controller\login_controlador.php:3
+Stack trace:
+#0 D:\xampp\htdocs\mvc\index.php(28): require_once()
+#1 {main}
+  thrown in D:\xampp\htdocs\mvc\Controller\login_controlador.php on line 3
+[03-Feb-2023 13:20:54 Europe/Berlin] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in D:\xampp\htdocs\mvc\Controller\login_controlador.php on line 2
+[03-Feb-2023 13:20:54 Europe/Berlin] PHP Stack trace:
+[03-Feb-2023 13:20:54 Europe/Berlin] PHP   1. {main}() D:\xampp\htdocs\mvc\index.php:0
+[03-Feb-2023 13:20:54 Europe/Berlin] PHP   2. require_once() D:\xampp\htdocs\mvc\index.php:19
+[03-Feb-2023 13:20:54 Europe/Berlin] PHP   3. session_start() D:\xampp\htdocs\mvc\Controller\login_controlador.php:2
+[03-Feb-2023 13:21:05 Europe/Berlin] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in D:\xampp\htdocs\mvc\Controller\login_controlador.php on line 2
+[03-Feb-2023 13:21:05 Europe/Berlin] PHP Stack trace:
+[03-Feb-2023 13:21:05 Europe/Berlin] PHP   1. {main}() D:\xampp\htdocs\mvc\index.php:0
+[03-Feb-2023 13:21:05 Europe/Berlin] PHP   2. require_once() D:\xampp\htdocs\mvc\index.php:19
+[03-Feb-2023 13:21:05 Europe/Berlin] PHP   3. session_start() D:\xampp\htdocs\mvc\Controller\login_controlador.php:2
+[03-Feb-2023 13:21:05 Europe/Berlin] PHP Warning:  Undefined variable $stmt in D:\xampp\htdocs\mvc\Model\login_modelo.php on line 14
+[03-Feb-2023 13:21:05 Europe/Berlin] PHP Stack trace:
+[03-Feb-2023 13:21:05 Europe/Berlin] PHP   1. {main}() D:\xampp\htdocs\mvc\index.php:0
+[03-Feb-2023 13:21:05 Europe/Berlin] PHP   2. require_once() D:\xampp\htdocs\mvc\index.php:19
+[03-Feb-2023 13:21:05 Europe/Berlin] PHP   3. Login_model->validarUsuario($username = 'a', $password = 'a') D:\xampp\htdocs\mvc\Controller\login_controlador.php:8
+[03-Feb-2023 13:21:05 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to a member function bind_param() on null in D:\xampp\htdocs\mvc\Model\login_modelo.php:14
+Stack trace:
+#0 D:\xampp\htdocs\mvc\Controller\login_controlador.php(8): Login_model->validarUsuario('a', 'a')
+#1 D:\xampp\htdocs\mvc\index.php(19): require_once('D:\\xampp\\htdocs...')
+#2 {main}
+  thrown in D:\xampp\htdocs\mvc\Model\login_modelo.php on line 14
+[03-Feb-2023 13:21:35 Europe/Berlin] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in D:\xampp\htdocs\mvc\Controller\login_controlador.php on line 2
+[03-Feb-2023 13:21:35 Europe/Berlin] PHP Stack trace:
+[03-Feb-2023 13:21:35 Europe/Berlin] PHP   1. {main}() D:\xampp\htdocs\mvc\index.php:0
+[03-Feb-2023 13:21:35 Europe/Berlin] PHP   2. require_once() D:\xampp\htdocs\mvc\index.php:19
+[03-Feb-2023 13:21:35 Europe/Berlin] PHP   3. session_start() D:\xampp\htdocs\mvc\Controller\login_controlador.php:2
+[03-Feb-2023 13:21:35 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to undefined method PDOStatement::bind_param() in D:\xampp\htdocs\mvc\Model\login_modelo.php:14
+Stack trace:
+#0 D:\xampp\htdocs\mvc\Controller\login_controlador.php(8): Login_model->validarUsuario('a', 'a')
+#1 D:\xampp\htdocs\mvc\index.php(19): require_once('D:\\xampp\\htdocs...')
+#2 {main}
+  thrown in D:\xampp\htdocs\mvc\Model\login_modelo.php on line 14
+[03-Feb-2023 13:21:43 Europe/Berlin] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in D:\xampp\htdocs\mvc\Controller\login_controlador.php on line 2
+[03-Feb-2023 13:21:43 Europe/Berlin] PHP Stack trace:
+[03-Feb-2023 13:21:43 Europe/Berlin] PHP   1. {main}() D:\xampp\htdocs\mvc\index.php:0
+[03-Feb-2023 13:21:43 Europe/Berlin] PHP   2. require_once() D:\xampp\htdocs\mvc\index.php:19
+[03-Feb-2023 13:21:43 Europe/Berlin] PHP   3. session_start() D:\xampp\htdocs\mvc\Controller\login_controlador.php:2
+[03-Feb-2023 13:21:46 Europe/Berlin] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in D:\xampp\htdocs\mvc\Controller\login_controlador.php on line 2
+[03-Feb-2023 13:21:46 Europe/Berlin] PHP Stack trace:
+[03-Feb-2023 13:21:46 Europe/Berlin] PHP   1. {main}() D:\xampp\htdocs\mvc\index.php:0
+[03-Feb-2023 13:21:46 Europe/Berlin] PHP   2. require_once() D:\xampp\htdocs\mvc\index.php:19
+[03-Feb-2023 13:21:46 Europe/Berlin] PHP   3. session_start() D:\xampp\htdocs\mvc\Controller\login_controlador.php:2
+[03-Feb-2023 13:21:46 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to undefined method PDOStatement::bind_param() in D:\xampp\htdocs\mvc\Model\login_modelo.php:14
+Stack trace:
+#0 D:\xampp\htdocs\mvc\Controller\login_controlador.php(8): Login_model->validarUsuario('a', 'a')
+#1 D:\xampp\htdocs\mvc\index.php(19): require_once('D:\\xampp\\htdocs...')
+#2 {main}
+  thrown in D:\xampp\htdocs\mvc\Model\login_modelo.php on line 14
+[03-Feb-2023 21:41:08 Europe/Berlin] PHP Warning:  require_once(../Model/categorias_modelo.php): Failed to open stream: No such file or directory in D:\XAMPP\htdocs\mvc\Controller\categorias_controlador.php on line 3
+[03-Feb-2023 21:41:08 Europe/Berlin] PHP Fatal error:  Uncaught Error: Failed opening required '../Model/categorias_modelo.php' (include_path='D:\XAMPP\php\PEAR') in D:\XAMPP\htdocs\mvc\Controller\categorias_controlador.php:3
+Stack trace:
+#0 D:\XAMPP\htdocs\mvc\index.php(17): require_once()
+#1 {main}
+  thrown in D:\XAMPP\htdocs\mvc\Controller\categorias_controlador.php on line 3
+[03-Feb-2023 21:59:43 Europe/Berlin] PHP Warning:  require_once(../Model/categorias_modelo.php): Failed to open stream: No such file or directory in D:\XAMPP\htdocs\mvc\Controller\categorias_controlador.php on line 3
+[03-Feb-2023 21:59:43 Europe/Berlin] PHP Fatal error:  Uncaught Error: Failed opening required '../Model/categorias_modelo.php' (include_path='D:\XAMPP\php\PEAR') in D:\XAMPP\htdocs\mvc\Controller\categorias_controlador.php:3
+Stack trace:
+#0 D:\XAMPP\htdocs\mvc\index.php(17): require_once()
+#1 {main}
+  thrown in D:\XAMPP\htdocs\mvc\Controller\categorias_controlador.php on line 3
+[04-Feb-2023 00:11:55 Europe/Berlin] PHP Warning:  require_once(../Model/categorias_modelo.php): Failed to open stream: No such file or directory in D:\XAMPP\htdocs\mvc\Controller\categorias_controlador.php on line 3
+[04-Feb-2023 00:11:55 Europe/Berlin] PHP Fatal error:  Uncaught Error: Failed opening required '../Model/categorias_modelo.php' (include_path='D:\XAMPP\php\PEAR') in D:\XAMPP\htdocs\mvc\Controller\categorias_controlador.php:3
+Stack trace:
+#0 D:\XAMPP\htdocs\mvc\index.php(17): require_once()
+#1 {main}
+  thrown in D:\XAMPP\htdocs\mvc\Controller\categorias_controlador.php on line 3
+[04-Feb-2023 01:14:29 Europe/Berlin] PHP Warning:  require_once(../Model/categorias_modelo.php): Failed to open stream: No such file or directory in D:\XAMPP\htdocs\mvc\Controller\categorias_controlador.php on line 3
+[04-Feb-2023 01:14:29 Europe/Berlin] PHP Fatal error:  Uncaught Error: Failed opening required '../Model/categorias_modelo.php' (include_path='D:\XAMPP\php\PEAR') in D:\XAMPP\htdocs\mvc\Controller\categorias_controlador.php:3
+Stack trace:
+#0 D:\XAMPP\htdocs\mvc\index.php(17): require_once()
+#1 {main}
+  thrown in D:\XAMPP\htdocs\mvc\Controller\categorias_controlador.php on line 3
+[04-Feb-2023 01:15:00 Europe/Berlin] PHP Warning:  require_once(../Model/categorias_modelo.php): Failed to open stream: No such file or directory in D:\XAMPP\htdocs\mvc\Controller\categorias_controlador.php on line 3
+[04-Feb-2023 01:15:00 Europe/Berlin] PHP Fatal error:  Uncaught Error: Failed opening required '../Model/categorias_modelo.php' (include_path='D:\XAMPP\php\PEAR') in D:\XAMPP\htdocs\mvc\Controller\categorias_controlador.php:3
+Stack trace:
+#0 D:\XAMPP\htdocs\mvc\index.php(17): require_once()
+#1 {main}
+  thrown in D:\XAMPP\htdocs\mvc\Controller\categorias_controlador.php on line 3
+[04-Feb-2023 01:16:41 Europe/Berlin] PHP Warning:  require_once(../Model/categorias_modelo.php): Failed to open stream: No such file or directory in D:\XAMPP\htdocs\mvc\Controller\categorias_controlador.php on line 3
+[04-Feb-2023 01:16:41 Europe/Berlin] PHP Fatal error:  Uncaught Error: Failed opening required '../Model/categorias_modelo.php' (include_path='D:\XAMPP\php\PEAR') in D:\XAMPP\htdocs\mvc\Controller\categorias_controlador.php:3
+Stack trace:
+#0 D:\XAMPP\htdocs\mvc\index.php(17): require_once()
+#1 {main}
+  thrown in D:\XAMPP\htdocs\mvc\Controller\categorias_controlador.php on line 3
+[04-Feb-2023 01:27:40 Europe/Berlin] PHP Warning:  require_once(../Model/categorias_modelo.php): Failed to open stream: No such file or directory in D:\XAMPP\htdocs\mvc\Controller\categorias_controlador.php on line 3
+[04-Feb-2023 01:27:40 Europe/Berlin] PHP Fatal error:  Uncaught Error: Failed opening required '../Model/categorias_modelo.php' (include_path='D:\XAMPP\php\PEAR') in D:\XAMPP\htdocs\mvc\Controller\categorias_controlador.php:3
+Stack trace:
+#0 D:\XAMPP\htdocs\mvc\index.php(17): require_once()
+#1 {main}
+  thrown in D:\XAMPP\htdocs\mvc\Controller\categorias_controlador.php on line 3
+[04-Feb-2023 01:32:07 Europe/Berlin] PHP Warning:  require_once(../Model/categorias_modelo.php): Failed to open stream: No such file or directory in D:\XAMPP\htdocs\mvc\Controller\categorias_controlador.php on line 3
+[04-Feb-2023 01:32:07 Europe/Berlin] PHP Fatal error:  Uncaught Error: Failed opening required '../Model/categorias_modelo.php' (include_path='D:\XAMPP\php\PEAR') in D:\XAMPP\htdocs\mvc\Controller\categorias_controlador.php:3
+Stack trace:
+#0 D:\XAMPP\htdocs\mvc\index.php(17): require_once()
+#1 {main}
+  thrown in D:\XAMPP\htdocs\mvc\Controller\categorias_controlador.php on line 3
+[04-Feb-2023 01:33:01 Europe/Berlin] PHP Warning:  require_once(../Model/categorias_modelo.php): Failed to open stream: No such file or directory in D:\XAMPP\htdocs\mvc\Controller\categorias_controlador.php on line 3
+[04-Feb-2023 01:33:01 Europe/Berlin] PHP Fatal error:  Uncaught Error: Failed opening required '../Model/categorias_modelo.php' (include_path='D:\XAMPP\php\PEAR') in D:\XAMPP\htdocs\mvc\Controller\categorias_controlador.php:3
+Stack trace:
+#0 D:\XAMPP\htdocs\mvc\index.php(17): require_once()
+#1 {main}
+  thrown in D:\XAMPP\htdocs\mvc\Controller\categorias_controlador.php on line 3
+[04-Feb-2023 01:33:01 Europe/Berlin] PHP Warning:  require_once(../Model/categorias_modelo.php): Failed to open stream: No such file or directory in D:\XAMPP\htdocs\mvc\Controller\categorias_controlador.php on line 3
+[04-Feb-2023 01:33:01 Europe/Berlin] PHP Fatal error:  Uncaught Error: Failed opening required '../Model/categorias_modelo.php' (include_path='D:\XAMPP\php\PEAR') in D:\XAMPP\htdocs\mvc\Controller\categorias_controlador.php:3
+Stack trace:
+#0 D:\XAMPP\htdocs\mvc\index.php(17): require_once()
+#1 {main}
+  thrown in D:\XAMPP\htdocs\mvc\Controller\categorias_controlador.php on line 3
+[04-Feb-2023 01:33:02 Europe/Berlin] PHP Warning:  require_once(../Model/categorias_modelo.php): Failed to open stream: No such file or directory in D:\XAMPP\htdocs\mvc\Controller\categorias_controlador.php on line 3
+[04-Feb-2023 01:33:02 Europe/Berlin] PHP Fatal error:  Uncaught Error: Failed opening required '../Model/categorias_modelo.php' (include_path='D:\XAMPP\php\PEAR') in D:\XAMPP\htdocs\mvc\Controller\categorias_controlador.php:3
+Stack trace:
+#0 D:\XAMPP\htdocs\mvc\index.php(17): require_once()
+#1 {main}
+  thrown in D:\XAMPP\htdocs\mvc\Controller\categorias_controlador.php on line 3
+[04-Feb-2023 01:33:02 Europe/Berlin] PHP Warning:  require_once(../Model/categorias_modelo.php): Failed to open stream: No such file or directory in D:\XAMPP\htdocs\mvc\Controller\categorias_controlador.php on line 3
+[04-Feb-2023 01:33:02 Europe/Berlin] PHP Fatal error:  Uncaught Error: Failed opening required '../Model/categorias_modelo.php' (include_path='D:\XAMPP\php\PEAR') in D:\XAMPP\htdocs\mvc\Controller\categorias_controlador.php:3
+Stack trace:
+#0 D:\XAMPP\htdocs\mvc\index.php(17): require_once()
+#1 {main}
+  thrown in D:\XAMPP\htdocs\mvc\Controller\categorias_controlador.php on line 3
+[04-Feb-2023 01:33:02 Europe/Berlin] PHP Warning:  require_once(../Model/categorias_modelo.php): Failed to open stream: No such file or directory in D:\XAMPP\htdocs\mvc\Controller\categorias_controlador.php on line 3
+[04-Feb-2023 01:33:02 Europe/Berlin] PHP Fatal error:  Uncaught Error: Failed opening required '../Model/categorias_modelo.php' (include_path='D:\XAMPP\php\PEAR') in D:\XAMPP\htdocs\mvc\Controller\categorias_controlador.php:3
+Stack trace:
+#0 D:\XAMPP\htdocs\mvc\index.php(17): require_once()
+#1 {main}
+  thrown in D:\XAMPP\htdocs\mvc\Controller\categorias_controlador.php on line 3
+[04-Feb-2023 01:33:08 Europe/Berlin] PHP Warning:  Undefined variable $_SESSION in D:\XAMPP\htdocs\mvc\index.php on line 17
+[04-Feb-2023 01:33:08 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in D:\XAMPP\htdocs\mvc\index.php on line 17
+[04-Feb-2023 01:33:30 Europe/Berlin] PHP Warning:  require_once(../Model/categorias_modelo.php): Failed to open stream: No such file or directory in D:\XAMPP\htdocs\mvc\Controller\categorias_controlador.php on line 3
+[04-Feb-2023 01:33:30 Europe/Berlin] PHP Fatal error:  Uncaught Error: Failed opening required '../Model/categorias_modelo.php' (include_path='D:\XAMPP\php\PEAR') in D:\XAMPP\htdocs\mvc\Controller\categorias_controlador.php:3
+Stack trace:
+#0 D:\XAMPP\htdocs\mvc\index.php(18): require_once()
+#1 {main}
+  thrown in D:\XAMPP\htdocs\mvc\Controller\categorias_controlador.php on line 3
+[05-Feb-2023 00:15:18 Europe/Berlin] PHP Warning:  Undefined array key "correo" in D:\XAMPP\htdocs\mvc\index.php on line 18
+[05-Feb-2023 00:15:30 Europe/Berlin] PHP Warning:  Undefined array key "correo" in D:\XAMPP\htdocs\mvc\index.php on line 18
+[05-Feb-2023 00:21:59 Europe/Berlin] PHP Warning:  Undefined variable $con in D:\XAMPP\htdocs\mvc\index.php on line 22
+[05-Feb-2023 00:21:59 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: mysqli_query(): Argument #1 ($mysql) must be of type mysqli, null given in D:\XAMPP\htdocs\mvc\index.php:22
+Stack trace:
+#0 D:\XAMPP\htdocs\mvc\index.php(22): mysqli_query(NULL, 'SELECT usuarios...')
+#1 {main}
+  thrown in D:\XAMPP\htdocs\mvc\index.php on line 22
+[05-Feb-2023 00:22:08 Europe/Berlin] PHP Warning:  Undefined variable $row in D:\XAMPP\htdocs\mvc\index.php on line 23
+[05-Feb-2023 00:22:08 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in D:\XAMPP\htdocs\mvc\index.php on line 23
+[05-Feb-2023 16:29:51 Europe/Berlin] PHP Warning:  Undefined array key "correo" in D:\XAMPP\htdocs\mvc\index.php on line 18
+[04-Mar-2023 05:07:04 Europe/Berlin] PHP Warning:  Undefined array key 0 in C:\xampp\htdocs\Proyecto\index.php on line 52
+[04-Mar-2023 05:07:04 Europe/Berlin] PHP Warning:  Undefined array key "cantidad" in C:\xampp\htdocs\Proyecto\index.php on line 52
+[04-Mar-2023 18:57:57 Europe/Berlin] PHP Warning:  Undefined variable $product_id in C:\xampp\htdocs\Proyecto\index.php on line 48
+[04-Mar-2023 18:57:57 Europe/Berlin] PHP Warning:  Undefined array key "cart" in C:\xampp\htdocs\Proyecto\index.php on line 48
+[04-Mar-2023 18:57:57 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: array_column(): Argument #1 ($array) must be of type array, null given in C:\xampp\htdocs\Proyecto\index.php:48
+Stack trace:
+#0 C:\xampp\htdocs\Proyecto\index.php(48): array_column(NULL, 'Cod_producto')
+#1 {main}
+  thrown in C:\xampp\htdocs\Proyecto\index.php on line 48
+[04-Mar-2023 19:01:14 Europe/Berlin] PHP Warning:  Undefined variable $product_id in C:\xampp\htdocs\Proyecto\index.php on line 36
+[04-Mar-2023 19:01:14 Europe/Berlin] PHP Warning:  Undefined variable $product_id in C:\xampp\htdocs\Proyecto\index.php on line 45
+[04-Mar-2023 19:01:14 Europe/Berlin] PHP Warning:  Undefined variable $unidades in C:\xampp\htdocs\Proyecto\index.php on line 46
+[04-Mar-2023 19:01:14 Europe/Berlin] PHP Warning:  Undefined variable $unidades in C:\xampp\htdocs\Proyecto\index.php on line 50
+[04-Mar-2023 19:56:31 Europe/Berlin] PHP Warning:  Undefined array key "Cod_producto" in C:\xampp\htdocs\Proyecto\index.php on line 26
+[04-Mar-2023 19:56:31 Europe/Berlin] PHP Warning:  Undefined array key "unidades" in C:\xampp\htdocs\Proyecto\index.php on line 27
+[04-Mar-2023 19:56:32 Europe/Berlin] PHP Warning:  Undefined array key "Cod_producto" in C:\xampp\htdocs\Proyecto\index.php on line 26
+[04-Mar-2023 20:01:46 Europe/Berlin] PHP Warning:  Undefined array key "cod" in C:\xampp\htdocs\Proyecto\index.php on line 26
+[04-Mar-2023 20:01:46 Europe/Berlin] PHP Warning:  Undefined array key "unidades" in C:\xampp\htdocs\Proyecto\index.php on line 27
+[04-Mar-2023 20:02:58 Europe/Berlin] PHP Warning:  Undefined array key "cod" in C:\xampp\htdocs\Proyecto\index.php on line 26
+[04-Mar-2023 20:02:58 Europe/Berlin] PHP Warning:  Undefined array key "unidades" in C:\xampp\htdocs\Proyecto\index.php on line 27
+[04-Mar-2023 20:15:04 Europe/Berlin] PHP Warning:  Undefined array key "cod" in C:\xampp\htdocs\Proyecto\index.php on line 26
+[04-Mar-2023 20:15:04 Europe/Berlin] PHP Warning:  Undefined array key "unidades" in C:\xampp\htdocs\Proyecto\index.php on line 27
+[04-Mar-2023 20:15:15 Europe/Berlin] PHP Warning:  Undefined array key "cod" in C:\xampp\htdocs\Proyecto\index.php on line 26
+[04-Mar-2023 20:15:15 Europe/Berlin] PHP Warning:  Undefined array key "unidades" in C:\xampp\htdocs\Proyecto\index.php on line 27
+[04-Mar-2023 20:23:10 Europe/Berlin] PHP Warning:  Undefined array key "cod" in C:\xampp\htdocs\Proyecto\index.php on line 26
+[04-Mar-2023 20:23:10 Europe/Berlin] PHP Warning:  Undefined array key "unidades" in C:\xampp\htdocs\Proyecto\index.php on line 27
+[04-Mar-2023 20:23:10 Europe/Berlin] PHP Warning:  Undefined array key "cod" in C:\xampp\htdocs\Proyecto\index.php on line 26
+[04-Mar-2023 20:23:10 Europe/Berlin] PHP Warning:  Undefined array key "unidades" in C:\xampp\htdocs\Proyecto\index.php on line 27
+[04-Mar-2023 20:24:18 Europe/Berlin] PHP Warning:  Undefined array key "cod" in C:\xampp\htdocs\Proyecto\index.php on line 26
+[04-Mar-2023 20:24:18 Europe/Berlin] PHP Warning:  Undefined array key "unidades" in C:\xampp\htdocs\Proyecto\index.php on line 27
+[04-Mar-2023 20:25:56 Europe/Berlin] PHP Warning:  Undefined array key "cod" in C:\xampp\htdocs\Proyecto\index.php on line 26
+[04-Mar-2023 20:25:56 Europe/Berlin] PHP Warning:  Undefined array key "unidades" in C:\xampp\htdocs\Proyecto\index.php on line 27
+[04-Mar-2023 20:26:00 Europe/Berlin] PHP Warning:  Undefined array key "cod" in C:\xampp\htdocs\Proyecto\index.php on line 26
+[04-Mar-2023 20:26:00 Europe/Berlin] PHP Warning:  Undefined array key "unidades" in C:\xampp\htdocs\Proyecto\index.php on line 27
+[04-Mar-2023 20:27:43 Europe/Berlin] PHP Warning:  Undefined array key "cod" in C:\xampp\htdocs\Proyecto\index.php on line 26
+[04-Mar-2023 20:27:43 Europe/Berlin] PHP Warning:  Undefined array key "unidades" in C:\xampp\htdocs\Proyecto\index.php on line 27
+[04-Mar-2023 20:28:26 Europe/Berlin] PHP Warning:  Undefined array key "cod" in C:\xampp\htdocs\Proyecto\index.php on line 26
+[04-Mar-2023 20:28:26 Europe/Berlin] PHP Warning:  Undefined array key "unidades" in C:\xampp\htdocs\Proyecto\index.php on line 27
+[04-Mar-2023 20:28:31 Europe/Berlin] PHP Warning:  Undefined array key "cod" in C:\xampp\htdocs\Proyecto\index.php on line 26
+[04-Mar-2023 20:28:31 Europe/Berlin] PHP Warning:  Undefined array key "unidades" in C:\xampp\htdocs\Proyecto\index.php on line 27
+[04-Mar-2023 20:28:35 Europe/Berlin] PHP Warning:  Undefined array key "cod" in C:\xampp\htdocs\Proyecto\index.php on line 26
+[04-Mar-2023 20:28:35 Europe/Berlin] PHP Warning:  Undefined array key "unidades" in C:\xampp\htdocs\Proyecto\index.php on line 27
+[04-Mar-2023 20:29:25 Europe/Berlin] PHP Warning:  Undefined array key "cod" in C:\xampp\htdocs\Proyecto\index.php on line 26
+[04-Mar-2023 20:29:25 Europe/Berlin] PHP Warning:  Undefined array key "unidades" in C:\xampp\htdocs\Proyecto\index.php on line 27
+[04-Mar-2023 20:31:59 Europe/Berlin] PHP Warning:  Undefined array key "cod" in C:\xampp\htdocs\Proyecto\index.php on line 26
+[04-Mar-2023 20:31:59 Europe/Berlin] PHP Warning:  Undefined array key "unidades" in C:\xampp\htdocs\Proyecto\index.php on line 27
+[04-Mar-2023 20:36:41 Europe/Berlin] PHP Warning:  Undefined array key "cod" in C:\xampp\htdocs\Proyecto\index.php on line 29
+[04-Mar-2023 20:36:41 Europe/Berlin] PHP Warning:  Undefined array key "unidades" in C:\xampp\htdocs\Proyecto\index.php on line 30
+[04-Mar-2023 20:40:05 Europe/Berlin] PHP Warning:  Undefined array key "cod" in C:\xampp\htdocs\Proyecto\index.php on line 31
+[04-Mar-2023 20:40:05 Europe/Berlin] PHP Warning:  Undefined array key "unidades" in C:\xampp\htdocs\Proyecto\index.php on line 32
+[04-Mar-2023 20:43:31 Europe/Berlin] PHP Warning:  Undefined array key "cod" in C:\xampp\htdocs\Proyecto\index.php on line 31
+[04-Mar-2023 20:43:31 Europe/Berlin] PHP Warning:  Undefined array key "unidades" in C:\xampp\htdocs\Proyecto\index.php on line 32
+[04-Mar-2023 20:44:17 Europe/Berlin] PHP Warning:  Undefined array key "anadir" in C:\xampp\htdocs\Proyecto\index.php on line 31
+[04-Mar-2023 20:44:17 Europe/Berlin] PHP Warning:  Undefined array key "anadir" in C:\xampp\htdocs\Proyecto\index.php on line 31
+[04-Mar-2023 20:44:17 Europe/Berlin] PHP Warning:  Undefined array key "anadir" in C:\xampp\htdocs\Proyecto\index.php on line 31
+[04-Mar-2023 20:44:17 Europe/Berlin] PHP Warning:  Undefined array key "anadir" in C:\xampp\htdocs\Proyecto\index.php on line 31
+[04-Mar-2023 20:44:18 Europe/Berlin] PHP Warning:  Undefined array key "anadir" in C:\xampp\htdocs\Proyecto\index.php on line 31
+[04-Mar-2023 20:45:44 Europe/Berlin] PHP Warning:  Undefined array key "anadir" in C:\xampp\htdocs\Proyecto\index.php on line 31
+[04-Mar-2023 20:45:51 Europe/Berlin] PHP Warning:  Undefined array key "anadir" in C:\xampp\htdocs\Proyecto\index.php on line 31
+[04-Mar-2023 20:46:10 Europe/Berlin] PHP Warning:  Undefined array key "anadir" in C:\xampp\htdocs\Proyecto\index.php on line 31
+[04-Mar-2023 20:48:01 Europe/Berlin] PHP Warning:  Undefined array key "carrito" in C:\xampp\htdocs\Proyecto\index.php on line 29
+[04-Mar-2023 20:48:01 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: count(): Argument #1 ($value) must be of type Countable|array, null given in C:\xampp\htdocs\Proyecto\index.php:29
+Stack trace:
+#0 {main}
+  thrown in C:\xampp\htdocs\Proyecto\index.php on line 29
+[04-Mar-2023 20:49:19 Europe/Berlin] PHP Warning:  Undefined array key "carrito_count" in C:\xampp\htdocs\Proyecto\index.php on line 28
+[04-Mar-2023 20:49:34 Europe/Berlin] PHP Warning:  Undefined array key "carrito_count" in C:\xampp\htdocs\Proyecto\index.php on line 28
+[04-Mar-2023 20:49:44 Europe/Berlin] PHP Warning:  Undefined array key "carrito_count" in C:\xampp\htdocs\Proyecto\index.php on line 28
+[04-Mar-2023 23:15:33 Europe/Berlin] PHP Warning:  Undefined array key "carrito_count" in C:\xampp\htdocs\Proyecto\index.php on line 28
+[04-Mar-2023 23:17:42 Europe/Berlin] PHP Warning:  Undefined array key "carrito_count" in C:\xampp\htdocs\Proyecto\index.php on line 30
+[04-Mar-2023 23:17:49 Europe/Berlin] PHP Warning:  Undefined array key "carrito_count" in C:\xampp\htdocs\Proyecto\index.php on line 30
+[04-Mar-2023 23:17:54 Europe/Berlin] PHP Warning:  Undefined array key "carrito_count" in C:\xampp\htdocs\Proyecto\index.php on line 30
+[04-Mar-2023 23:18:33 Europe/Berlin] PHP Warning:  Undefined array key "carrito_count" in C:\xampp\htdocs\Proyecto\index.php on line 28
+[04-Mar-2023 23:18:33 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: count(): Argument #1 ($value) must be of type Countable|array, null given in C:\xampp\htdocs\Proyecto\index.php:28
+Stack trace:
+#0 {main}
+  thrown in C:\xampp\htdocs\Proyecto\index.php on line 28
+[04-Mar-2023 23:18:39 Europe/Berlin] PHP Warning:  Undefined array key "carrito_count" in C:\xampp\htdocs\Proyecto\index.php on line 28
+[04-Mar-2023 23:18:39 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: count(): Argument #1 ($value) must be of type Countable|array, null given in C:\xampp\htdocs\Proyecto\index.php:28
+Stack trace:
+#0 {main}
+  thrown in C:\xampp\htdocs\Proyecto\index.php on line 28

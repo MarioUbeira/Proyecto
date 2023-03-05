@@ -1,0 +1,16 @@
+.carrusel {
+  display: flex;
+  justify-content: center;
+  margin: 10px 0 10px 0;
+}
+#imagenCarr {
+  width: 99%;
+  height: 13.65vw;
+  background-size: cover;
+}
+
+@media (max-width: 768px) {
+#imagenCarr {
+    height: 52.65vw;
+}
+}

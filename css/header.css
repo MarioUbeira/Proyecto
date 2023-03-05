@@ -1,0 +1,341 @@
+header {
+  position: sticky;
+  display: flex;
+  top: 0;
+  left: 0;
+  padding: 0.2em;
+  z-index: 999;
+  width: 100%;
+  background-color: #fff;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+/* Estilos para el contenedor principal */
+.containerH {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+/* Estilos para el logo */
+.infoPag {
+  display: flex;
+  align-items: center;
+  color: #3a3a3a;
+  text-align: center;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: bolder;
+}
+
+.infoPag>a {
+  text-decoration: none;
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.menuPers {
+  display: flex;
+  list-style-type: none;
+  position: relative;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: bolder;
+  text-align: center;
+}
+
+.menuPers a {
+  width: 100%;
+  text-decoration: none;
+  margin: 0 0.1em 0 0.1em;
+  color: black;
+  display: flex;
+  align-items: center;
+}
+
+.cuenta:hover {
+  cursor: pointer;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+.cuenta {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.cuenta:hover .submenu {
+  visibility: visible;
+}
+
+/* Estilos para el submenu */
+.submenu {
+  visibility: hidden;
+  position: absolute;
+  top: 100%;
+  cursor: pointer;
+  padding: 1%;
+  background-color: #fff;
+  border-color: #ccc;
+  border-style: solid;
+  border-width: 0px 1px 1px 1px;
+  width: 22%;
+}
+
+.subdiv button:hover {
+  background-color: #00b3aa;
+}
+
+.subdiv button {
+  border: none;
+  width: 100%;
+  background-color: #fff;
+  color: black;
+}
+
+.subText {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: bolder;
+  width: 80%;
+}
+
+.buscador {
+  display: flex;
+}
+
+/* Estilos para el input de busqueda */
+.buscador input[type="text"] {
+  width: 65%;
+  border: none;
+  padding: 0.5em 0;
+  border-radius: 5px 0 0 5px;
+  margin-right: -4px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+/* Estilos para el boton de busqueda */
+.buscador button[type="submit"] {
+  width: 30%;
+  padding: 0.5em 1em;
+  border: none;
+  background-color: #018273;
+  color: #fff;
+  border-radius: 0 5px 5px 0;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.contador {
+  position: absolute;
+  top: 50%;
+  right: 20.2%;
+  background-color: #00b3aa;
+  border-radius: 50%;
+  font-size: 13px;
+  color: white;
+  text-align: center;
+  width: 2%;
+}
+
+.buscador button[type="submit"]:hover {
+  background-color: #00675b;
+  cursor: pointer;
+}
+
+/* Estilos para Pantallas de PC */
+@media (min-width: 1090px) {
+  .cuenta {
+    white-space: nowrap;
+  }
+  .infoPag {
+    width: 30%;
+    font-size: larger;
+    font-weight: bolder;
+  }
+
+  .infoPag>a {
+    width: 50%;
+  }
+
+  .buscador {
+    width: 30%;
+  }
+
+  .infoPag img {
+    width: 18%;
+  }
+
+  .menuPers {
+    height: 100%;
+    width: 40%;
+    justify-content: end;
+  }
+
+  .menuPers img {
+    width: 15%;
+  }
+
+  .menuPers>div {
+    width: 22%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+  }
+
+  .buscador form {
+    width: 100%;
+  }
+
+  .buscador input[type="text"] {
+    padding: 0.5em;
+    width: 65%;
+  }
+
+  .buscador button[type="submit"] {
+    width: 25%;
+  }
+}
+
+/* Estilos para tablet*/
+@media (min-width: 700px) and (max-width: 1090px) {
+  .cuenta {
+    white-space: nowrap;
+  }
+  .infoPag {
+    width: 25%;
+    font-size: larger;
+    font-weight: bolder;
+  }
+
+  .infoPag>a {
+    width: 100%;
+    justify-content: start;
+  }
+
+  .buscador {
+    width: 35%;
+  }
+
+  .buscador form {
+    width: 100%;
+  }
+
+  .buscador input[type="text"] {
+    padding: 0.5em;
+  }
+
+  .buscador button[type="submit"] {
+    width: 25%;
+  }
+
+  .infoPag img {
+    width: 20%;
+  }
+
+  .menuPers {
+    height: 100%;
+    width: 40%;
+    justify-content: end;
+  }
+
+  .menuPers img {
+    width: 20%;
+  }
+
+  .menuPers>div {
+    width: 33%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+  }
+
+  .submenu {
+    width: 40%;
+  }
+
+  .contador {
+    width: 4%;
+    right: 29.5%;
+  }
+}
+
+/* Estilos para móvil */
+@media (max-width: 700px) {
+  .containerH {
+    justify-content: space-between;
+    padding: 0.5em;
+  }
+
+  .infoPag {
+    width: 10%;
+    height: 100%;
+    font-size: 0%;
+    justify-content: center;
+  }
+
+  .infoPag>a {
+    width: 100%;
+  }
+
+  .menuPers {
+    justify-content: center;
+    width: 25%;
+    height: 100%;
+    margin-top: 0.5em;
+    font-size: 0%;
+  }
+
+  .submenu {
+    width: 99%;
+    top: 100%;
+
+    display: flex;
+    flex-direction: column;
+    height: 155%;
+  }
+
+  .subdiv {
+    height: 50%;
+    width: 100%;
+    display: flex;
+  }
+
+  .submenu img {
+    width: 15%;
+    margin-right: 2%;
+  }
+
+  .subText {
+    width: 80%;
+    font-size: 12px;
+    height: 100%;
+    display: contents;
+  }
+
+  .menuPers a {
+    display: flex;
+  }
+
+  .menuPers>div {
+    width: 30%;
+    height: 100%;
+    align-items: center;
+    display: flex;
+  }
+
+  .buscador {
+    width: 60%;
+    justify-content: center;
+  }
+
+  .contador {
+    width: 15%;
+  }
+}
+
+@media (max-width: 395px) {
+  .subText {
+    font-size: 11px;
+  }
+}
