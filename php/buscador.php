@@ -1,8 +1,4 @@
-<?php
-include('header.php');
-?>
-
-
+<?php include("sesion.php"); ?>
 <!DOCTYPE html>
 <html>
 
@@ -21,7 +17,8 @@ include('header.php');
 
 
 <body>
-    <?php
+<?php
+include('header.php');
     // Conectar a la base de datos
     require_once('..' . DIRECTORY_SEPARATOR . 'Config' . DIRECTORY_SEPARATOR . 'Conectar.php');
 

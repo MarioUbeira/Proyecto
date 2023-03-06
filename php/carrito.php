@@ -1,7 +1,7 @@
 <?php
 require_once('..' . DIRECTORY_SEPARATOR . 'Config' . DIRECTORY_SEPARATOR . 'Conectar.php');
 require_once('..' . DIRECTORY_SEPARATOR . 'Model' . DIRECTORY_SEPARATOR . 'productos_modelo.php');
-include('header.php');
+include("sesion.php");
 ?>
 <!DOCTYPE html>
 <html>
@@ -23,7 +23,9 @@ include('header.php');
         integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
         crossorigin="anonymous"></script>
 </head>
+<body>
 <?php
+include('header.php');
 $total = 0;
 if ($_SESSION['rol'] == 3) {
     echo "<div class='card'><div class='card-body'>

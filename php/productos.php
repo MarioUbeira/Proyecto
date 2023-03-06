@@ -1,5 +1,5 @@
 <?php
-include('header.php'); ?>
+include('sesion.php'); ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -12,10 +12,14 @@ include('header.php'); ?>
     <link href="../css/header.css" rel="stylesheet" type="text/css">
     <link href="../css/productos.css" rel="stylesheet" type="text/css">
     <link href="../css/footer.css" rel="stylesheet" type="text/css">
+    <link rel="shortcut icon" href="../imagenes/Logo.ico" type="image/x-icon" />
+    <link rel="icon" href="../imagenes/Logo.ico" type="image/x-icon" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 
 <body>
+<?php
+include('header.php'); ?>
     <div class="contCats">
         <button id="toggleMenuCat"> ≡ </button>
         <div class="menuCat">

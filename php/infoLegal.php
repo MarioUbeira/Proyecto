@@ -1,5 +1,5 @@
 <?php
-include('header.php'); ?>
+include('sesion.php'); ?>
 <!DOCTYPE html>
 <html>
 
@@ -18,6 +18,8 @@ include('header.php'); ?>
 
 
 <body>
+<?php
+include('header.php'); ?>
     <div class="apartados">
         <div class="titulo">
             <h1>Información Legal</h1>

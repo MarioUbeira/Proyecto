@@ -1,5 +1,5 @@
 <?php
-include('header.php'); ?>
+include('sesion.php'); ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -13,7 +13,8 @@ include('header.php'); ?>
     <link href="../css/footer.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-    <?php 
+<?php
+include('header.php');
     include('..' . DIRECTORY_SEPARATOR . 'Model' . DIRECTORY_SEPARATOR . 'productos_modelo.php');
     $productos = cargar_producto($_GET['codigo']);
     echo "<div class='contenedor'>";

@@ -125,19 +125,25 @@ if (isset($_POST['anadir'])) {
         CATEGORÍAS
     </div>
     <div class="categorias">
-        <div class="item"><a class="itA" href="php/productos.php?categoria=4"><img src="imagenes/Menu/Arena.svg" />Arenas y
-            Gravas</a></div>
-        <div class="item"><a class="itA" href="php/productos.php?categoria=1"><img src="imagenes/Menu/Techo.svg" />Tejados Y
-            Cubiertas</a></div>
-        <div class="item"><a class="itA" href="php/productos.php?categoria=2"><img src="imagenes/Menu/Cemento.svg" />Cementos Y
-            Morteros</a></div>
-        <div class="item"><a class="itA" href="php/productos.php?categoria=6"><img src="imagenes/Menu/Madera.svg" />Madera</a></div>
+        <div class="item"><a class="itA" href="php/productos.php?categoria=4"><img
+                    src="imagenes/Menu/Arena.svg" />Arenas y
+                Gravas</a></div>
+        <div class="item"><a class="itA" href="php/productos.php?categoria=1"><img
+                    src="imagenes/Menu/Techo.svg" />Tejados Y
+                Cubiertas</a></div>
+        <div class="item"><a class="itA" href="php/productos.php?categoria=2"><img
+                    src="imagenes/Menu/Cemento.svg" />Cementos Y
+                Morteros</a></div>
+        <div class="item"><a class="itA" href="php/productos.php?categoria=6"><img
+                    src="imagenes/Menu/Madera.svg" />Madera</a></div>
         <div class="item"><a class="itA" href="php/productos.php?categoria=7"><img
                     src="imagenes/Menu/Hormigonera.svg" />Hormigoneras, carretillas...</a></div>
-        <div class="item"><a class="itA" href="php/productos.php?categoria=5"><img src="imagenes/Menu/Valla.svg" />Cercados y
-            Ocultación</a></div>
-        <div class="item"><a class="itA" href="php/productos.php?categoria=3"><img src="imagenes/Menu/Yeso.svg" />Yesos Y
-            Escayolas</a></div>
+        <div class="item"><a class="itA" href="php/productos.php?categoria=5"><img
+                    src="imagenes/Menu/Valla.svg" />Cercados y
+                Ocultación</a></div>
+        <div class="item"><a class="itA" href="php/productos.php?categoria=3"><img src="imagenes/Menu/Yeso.svg" />Yesos
+                Y
+                Escayolas</a></div>
         <div class="item"><a class="itA" href="php/productos.php?categoria=9"><img
                     src="imagenes/Menu/Eleconstruccion.svg" />Elementos de construcción</a></div>
         <div class="item"><a class="itA" href="php/productos.php?categoria=8"><img
@@ -216,6 +222,12 @@ if (isset($_POST['anadir'])) {
             </div>
         </div>
     </div>
+    <button id="mainBtn">Admin.</button>
+    <div id="submenu">
+        <button>Administrar Usuarios</button>
+        <button>Administrar Productos</button>
+    </div>
+    <script src="javascript/admin.js"></script>
     <!-- Footer -->
     <footer>
         <!-- Contactanos -->

@@ -115,6 +115,10 @@ button:hover {
   box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
 }
 
+.buscador form {
+  margin-bottom: -0.2%;
+}
+
 /* Estilos para el boton de busqueda */
 .buscador button[type="submit"] {
   width: 30%;

@@ -24,6 +24,7 @@
   background-color: #d9f1ef;
 }
 
+
 .menuCat {
   position: fixed;
   top: 90px; 
@@ -201,7 +202,6 @@
   
   .fav {
     width: 15%;
-    margin-left: 1%;
   }
   
   .trollButton {
@@ -216,11 +216,26 @@
   }
 
   .favButton:hover {
+    transition: background-color .8s;
     background-color: rgb(185, 17, 51);
   }
-
+  
   .trollButton:hover {
+    transition: background-color .8s;
     background-color: #018273;
+  }
+
+  input[type=number] {
+    border: none;
+    border-bottom: 2px solid #018273;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    color: #333;
+  }
+  
+  input[type=number]:focus {
+    outline: none;
+    border-bottom: 2px solid #00b3aa;
   }
 
   .errorMsg {

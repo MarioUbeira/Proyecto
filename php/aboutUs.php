@@ -1,4 +1,4 @@
-<?php include("header.php") ?>
+<?php include("sesion.php"); ?>
 <!DOCTYPE html>
 <html>
 
@@ -17,7 +17,7 @@
 
 
 <body>
-    
+<?php include("header.php"); ?>
     <div class="apartados">
         <div class="titulo">
             <h1>Quiénes somos</h1>

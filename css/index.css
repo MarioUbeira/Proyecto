@@ -204,9 +204,6 @@
   margin: 1%;
 }
 
-.button button:hover {
-  transition: background-color .8s;
-}
 
 .troll {
   display: flex;
@@ -215,7 +212,6 @@
 
 .fav {
   width: 15%;
-  margin-left: 1%;
 }
 
 .trollButton {
@@ -230,11 +226,30 @@
 }
 
 .favButton:hover {
+  transition: background-color .8s;
   background-color: rgb(185, 17, 51);
 }
 
 .trollButton:hover {
+  transition: background-color .8s;
   background-color: #018273;
+}
+
+input[type=number] {
+  border: none;
+  border-bottom: 2px solid #018273;
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  color: #333;
+}
+
+input[type=number]:focus {
+  outline: none;
+  border-bottom: 2px solid #00b3aa;
+}
+
+input[type=number]::-webkit-inner-spin-button {
+  opacity: 1
 }
 
 .producto label {
@@ -327,4 +342,47 @@
     visibility: hidden;
     height: 0px;
   }
+}
+
+#mainBtn {
+  position: fixed;
+  bottom: 10px;
+  left: 10px;
+  z-index: 9999;
+  background-color: #018273;
+  color: white;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 50%;
+}
+
+#mainBtn:hover {
+  background-color: #006156;
+  transition: background-color .8s;
+}
+
+#submenu {
+  position: fixed;
+  bottom: 60px;
+  left: 10px;
+  z-index: 9999;
+  display: none;
+}
+
+#submenu button {
+  display: block;
+  background-color: #018273;
+  color: white;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 10px;
+  margin-bottom: 5px;
+}
+
+#submenu button:hover {
+  background-color: #006156;
+  transition: background-color .8s;
 }
