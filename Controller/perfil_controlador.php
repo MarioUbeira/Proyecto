@@ -1,4 +1,7 @@
 <?php
+namespace Controllers;
+
+use Models\Perfil_modelo;
 
 include('..' . DIRECTORY_SEPARATOR . 'Config' . DIRECTORY_SEPARATOR . 'Conectar.php');
 include('..' . DIRECTORY_SEPARATOR . 'Model' . DIRECTORY_SEPARATOR . 'perfil_modelo.php');
@@ -9,7 +12,7 @@ if (isset($_SESSION['correo'])) {
     $email = $_SESSION['correo'];
 
     // Creamos una instancia del modelo
-    $perfil = new Perfil();
+    $perfil = new Perfil_modelo();
 
     // Obtenemos los datos del usuario
     $valores = $perfil->obtenerUsuario($email);
@@ -38,7 +41,7 @@ if (isset($_SESSION['correo'])) {
 
 } else {
     echo "Por favor, inicia sesión";
-    header("Location:..". DIRECTORY_SEPARATOR ."index.php");
+    header("Location:.." . DIRECTORY_SEPARATOR . "index.php");
 }
 
-include('..'. DIRECTORY_SEPARATOR .'View'. DIRECTORY_SEPARATOR .'perfil_view.php');
+include('..' . DIRECTORY_SEPARATOR . 'View' . DIRECTORY_SEPARATOR . 'perfil_view.php');

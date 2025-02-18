@@ -151,3 +151,21 @@ footer {
 a:visited {
   color: inherit;
 }
+
+.legal {
+  width: 100%;
+  background-color: white;
+  font-size: 10px;
+  justify-content: space-evenly;
+  display: flex;
+}
+
+.legal a {
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+}
+
+.legal a:hover {
+  color: rgb(47, 47, 47);
+}

@@ -1,0 +1,70 @@
+
+module-header h2 { font-size: 24px }
+calendar-table { width: 100%; border-collapse: collapse; }
+.calendar-header { font-size: 18px; font-weight: bold; padding: 10px; text-align: center; }
+.calendar-cell { width: 14.28%; height: 100px; vertical-align: top; position: relative; border: 1px solid #ccc; }
+.no-pedidos { background-color: #fff; }
+.has-pedidos { background-color: #f0f0f0; cursor: pointer; }
+.pedido-info { display: none; position: absolute; top: 25px; left: 0; right: 0; padding: 10px; background-color: #fff; border: 1px solid #ccc; z-index: 1; }
+.calendar-cell:hover .pedido-info { display: block; }
+.cliente { font-weight: bold; }
+/* Estilos para la tabla de pedidos */
+.pedido-info-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.pedido-info-table {
+    border-collapse: collapse;
+}
+
+.pedido-info-item {
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+}
+
+.cliente {
+    font-weight: bold;
+}
+
+.pedido {
+    color: #999;
+}
+
+/* Estilos para la tabla del calendario */
+.calendar-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.calendar-header {
+    font-weight: bold;
+    text-align: center;
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+}
+
+.calendar-cell {
+    height: 80px;
+    position: relative;
+    border-right: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+}
+.butone {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 10px 24px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.butone:hover {
+    background-color: #3e8e41;
+}

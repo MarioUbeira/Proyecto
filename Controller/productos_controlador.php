@@ -1,10 +1,13 @@
 <?php
+namespace Controllers;
 
-require_once("Model". DIRECTORY_SEPARATOR ."productos_modelo.php");
+use Models\Productos_modelo;
 
-$producto = new Productos_model();
+require_once("Model" . DIRECTORY_SEPARATOR . "productos_modelo.php");
+
+$producto = new Productos_modelo();
 $array_productos = $producto->get_productos();
 
-require_once("View". DIRECTORY_SEPARATOR ."productos_view.php");
+require_once("View" . DIRECTORY_SEPARATOR . "productos_view.php");
 
 ?>

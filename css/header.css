@@ -10,6 +10,9 @@ header {
   box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
 }
 
+*{
+  margin: 0px;
+}
 /* Estilos para el contenedor principal */
 .containerH {
   display: flex;
@@ -34,6 +37,51 @@ header {
   align-items: center;
   justify-content: center;
 }
+
+/* Estilos para el buscador */
+
+.buscador {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.buscador form {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+}
+
+.buscador form .cajaTexto {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+}
+
+.buscador form .cajaTexto input[type="text"] {
+  width: 100%;
+  margin-right: 10px;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: none;
+  background-color: #f2f2f2;
+}
+
+.buscador form button {
+  border: none;
+  background-color: transparent;
+}
+
+.buscador form button .lupa img {
+  height: 20px;
+  width: 20px;
+}
+
+/* Estilos para el menu */
 
 .menuPers {
   display: flex;
@@ -101,35 +149,6 @@ button:hover {
   width: 80%;
 }
 
-.buscador {
-  display: flex;
-}
-
-/* Estilos para el input de busqueda */
-.buscador input[type="text"] {
-  width: 65%;
-  border: none;
-  padding: 0.5em 0;
-  border-radius: 5px 0 0 5px;
-  margin-right: -4px;
-  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
-}
-
-.buscador form {
-  margin-bottom: -0.2%;
-}
-
-/* Estilos para el boton de busqueda */
-.buscador button[type="submit"] {
-  width: 30%;
-  padding: 0.5em 1em;
-  border: none;
-  background-color: #018273;
-  color: #fff;
-  border-radius: 0 5px 5px 0;
-  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
-}
-
 .contador {
   position: absolute;
   top: 50%;
@@ -140,11 +159,6 @@ button:hover {
   color: white;
   text-align: center;
   width: 2%;
-}
-
-.buscador button[type="submit"]:hover {
-  background-color: #00675b;
-  cursor: pointer;
 }
 
 /* Estilos para Pantallas de PC */
@@ -170,6 +184,10 @@ button:hover {
     width: 18%;
   }
 
+  .buscador form .cajaTexto input[type="text"] {
+    font-size: 14px;
+  }
+
   .menuPers {
     height: 100%;
     width: 40%;
@@ -185,19 +203,6 @@ button:hover {
     height: 100%;
     display: flex;
     align-items: center;
-  }
-
-  .buscador form {
-    width: 100%;
-  }
-
-  .buscador input[type="text"] {
-    padding: 0.5em;
-    width: 65%;
-  }
-
-  .buscador button[type="submit"] {
-    width: 25%;
   }
 }
 
@@ -217,24 +222,33 @@ button:hover {
     justify-content: start;
   }
 
-  .buscador {
-    width: 35%;
+  .infoPag img {
+    width: 20%;
   }
 
   .buscador form {
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  .buscador form .cajaTexto {
     width: 100%;
   }
 
-  .buscador input[type="text"] {
-    padding: 0.5em;
+  .buscador form .cajaTexto input[type="text"] {
+    width: calc(100% - 50px);
+    margin-right: 0;
+    margin-bottom: 10px;
   }
 
-  .buscador button[type="submit"] {
-    width: 25%;
+  .buscador form button {
+    width: 50px;
   }
 
-  .infoPag img {
-    width: 20%;
+  .buscador form button .lupa img {
+    height: 16px;
+    width: 16px;
   }
 
   .menuPers {
@@ -326,11 +340,6 @@ button:hover {
     height: 100%;
     align-items: center;
     display: flex;
-  }
-
-  .buscador {
-    width: 60%;
-    justify-content: center;
   }
 
   .contador {

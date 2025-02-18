@@ -1,11 +1,11 @@
 .contCats {
-    display: flex;
+  display: flex;
 }
 
 #toggleMenuCat {
   position: fixed;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-  top: 55px; 
+  top: 55px;
   left: 0;
   height: 35px;
   z-index: 99995;
@@ -27,7 +27,7 @@
 
 .menuCat {
   position: fixed;
-  top: 90px; 
+  top: 90px;
   left: -400px;
   background-color: #fff;
   transition: all 0.3s ease-in-out;
@@ -37,6 +37,26 @@
   border-radius: 5px;
 }
 
+.alert {
+  padding: 1rem 1.5rem;
+  border: 1px solid transparent;
+  border-radius: 0.25rem;
+  color: #155724;
+  background-color: #d4edda;
+  border-color: #c3e6cb;
+}
+
+.alert-success {
+  color: #155724;
+  background-color: #d4edda;
+  border-color: #c3e6cb;
+}
+
+.alert-info {
+  color: #0c5460;
+  background-color: #d1ecf1;
+  border-color: #bee5eb;
+}
 
 .menuCat.active {
   left: 0;
@@ -44,7 +64,7 @@
 
 .categoria {
   display: block;
-  background-color: #e6f8f7; 
+  background-color: #e6f8f7;
   text-align: center;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-weight: bold;
@@ -62,21 +82,55 @@
   color: #333;
 }
 
+.titCat {
+  font-size: 3em;
+  text-transform: uppercase;
+}
+
+.titCat,
+.textCat {
+  text-align: center;
+  font-weight: bolder;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  margin: 0 auto;
+  max-width: 800px;
+  width: 100%;
+  padding: 0 15px;
+  color: #333;
+}
+
+@media (min-width: 768px) {
+
+  .titCat,
+  .textCat {
+    max-width: 600px;
+  }
+}
+
+@media (min-width: 992px) {
+
+  .titCat,
+  .textCat {
+    max-width: 900px;
+  }
+}
 
 @media (min-width: 1090px) {
+  #toggleMenuCat {
+    top: 50px;
+  }
+
   .categoria {
     font-size: 1vw;
     height: 6vh;
   }
-  
+
   #toggleMenuCat {
-    width: 20vw;
+    width: 3.5vw;
   }
+
   .menuCat {
     width: 20vw;
-  }
-  .productos {
-    margin-top: 3%;
   }
 }
 
@@ -85,14 +139,13 @@
     font-size: 1.3vw;
     height: 5vh;
   }
+
   #toggleMenuCat {
     width: 25vw;
   }
+
   .menuCat {
     width: 25vw;
-  }
-  .productos {
-    margin-top: 5%;
   }
 }
 
@@ -101,147 +154,155 @@
     font-size: 3.8vw;
     height: 4vh;
   }
+
   #toggleMenuCat {
     width: 80vw;
     top: 70;
   }
+
   .menuCat {
     width: 80vw;
     top: 105;
   }
-  .productos {
+
+  .titCat {
     margin-top: 10%;
   }
 }
 
-.categoria:hover{
-    background-color: #00b3aa;
-    cursor: pointer;
+.categoria:hover {
+  background-color: #00b3aa;
+  cursor: pointer;
 }
 
 .productos {
-    display: flex;
-    /* Habilita Flexbox */
-    flex-wrap: wrap;
-    /* Permite que los elementos se ajusten automáticamente a la pantalla */
-    justify-content: center;
-    /* Alinea los elementos en el centro del contenedor */
-    align-items: center;
-    /* Centra los elementos verticalmente */
-    width: 100%;
-  }
-  
-  /* Estilos para los elementos dentro del contenedor */
-  .producto {
-    margin: 0.25%;
-    /* Agrega margen entre los elementos */
-    margin-bottom: 0.5%;
-    display: flex;
-    /* Establece que los elementos dentro del contenedor se dispongan en línea */
-    justify-content: center;
-    /* Centra los elementos en el eje horizontal */
-    flex-direction: column;
-    /* Establece que los elementos dentro del contenedor se dispongan en columnas */
-    align-items: center;
-    /* Centra los elementos en el eje vertical */
-    text-align: center;
-    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-    font-weight: bolder;
-  }
-
-  @media (min-width: 1025px) {
-    .producto {
-        width: 24%;
-    }
-  }
-
-  @media (min-width: 769px) and (max-width: 1024px) {
-    .producto {
-        width: 32%;
-    }  
+  display: flex;
+  /* Habilita Flexbox */
+  flex-wrap: wrap;
+  /* Permite que los elementos se ajusten automáticamente a la pantalla */
+  justify-content: center;
+  /* Alinea los elementos en el centro del contenedor */
+  align-items: center;
+  /* Centra los elementos verticalmente */
+  width: 100%;
 }
 
-  @media (max-width: 768px) {
-    .producto {
-        width: 85%;
-    }
-  }
+/* Estilos para los elementos dentro del contenedor */
+.producto {
+  margin: 0.25%;
+  /* Agrega margen entre los elementos */
+  margin-bottom: 0.5%;
+  display: flex;
+  /* Establece que los elementos dentro del contenedor se dispongan en línea */
+  justify-content: center;
+  /* Centra los elementos en el eje horizontal */
+  flex-direction: column;
+  /* Establece que los elementos dentro del contenedor se dispongan en columnas */
+  align-items: center;
+  /* Centra los elementos en el eje vertical */
+  text-align: center;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: bolder;
+}
 
-  .producto label {
-    padding: 1%;
+@media (min-width: 1025px) {
+  .producto {
+    width: 24%;
   }
+}
 
-  .producto img {
-    width: 100%;
+@media (min-width: 769px) and (max-width: 1024px) {
+  .producto {
+    width: 32%;
   }
-  
-  .button {
-    display: flex;
-  }
-  
-  .button button,.trollButton {
-    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-    font-weight: bolder;
-    border: none;
-    color: white;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    border-radius: 5px;
-    margin: 1%;
-  }
+}
 
-  .button button:hover {
-    transition: background-color .8s;
+@media (max-width: 768px) {
+  .producto {
+    width: 85%;
   }
+}
 
-  .troll {
-    display: flex;
-    width: 70%;
-  }
-  
-  .fav {
-    width: 15%;
-  }
-  
-  .trollButton {
-    height: 100%;
-    background-color: #00b3aa;
-  }
-  
-  .favButton {
-    width: 100%;
-    height: 100%;
-    background-color: crimson;
-  }
+.producto label {
+  padding: 1%;
+}
 
-  .favButton:hover {
-    transition: background-color .8s;
-    background-color: rgb(185, 17, 51);
-  }
-  
-  .trollButton:hover {
-    transition: background-color .8s;
-    background-color: #018273;
-  }
+.producto img {
+  width: 100%;
+}
 
-  input[type=number] {
-    border: none;
-    border-bottom: 2px solid #018273;
-    border-radius: 5px;
-    background-color: #f2f2f2;
-    color: #333;
-  }
-  
-  input[type=number]:focus {
-    outline: none;
-    border-bottom: 2px solid #00b3aa;
-  }
+.button {
+  display: flex;
+}
 
-  .errorMsg {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 10%;
-    font-size: 30px;
-  }
+.button button,
+.trollButton {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: bolder;
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 5px;
+  margin: 1%;
+  cursor: pointer;
+}
+
+.button button:hover {
+  transition: background-color .8s;
+}
+
+.troll {
+  display: flex;
+  width: 70%;
+  cursor: pointer;
+}
+
+.fav {
+  width: 15%;
+  cursor: pointer;
+}
+
+.trollButton {
+  height: 100%;
+  background-color: #00b3aa;
+  cursor: pointer;
+}
+
+.favButton {
+  width: 100%;
+  height: 100%;
+  background-color: crimson;
+}
+
+.favButton:hover {
+  transition: background-color .8s;
+  background-color: rgb(185, 17, 51);
+}
+
+.trollButton:hover {
+  transition: background-color .8s;
+  background-color: #018273;
+}
+
+input[type=number] {
+  border: none;
+  border-bottom: 2px solid #018273;
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  color: #333;
+}
+
+input[type=number]:focus {
+  outline: none;
+  border-bottom: 2px solid #00b3aa;
+}
+
+.errorMsg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10%;
+  font-size: 30px;
+}

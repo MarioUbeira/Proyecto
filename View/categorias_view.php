@@ -1,3 +1,5 @@
+<?php
+namespace View; ?>
 <!DOCTYPE html>
 <html lang="es">
 
@@ -7,6 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title></title>
 </head>
+
 <body>
     <div class="contenedor_productos">
         <?php

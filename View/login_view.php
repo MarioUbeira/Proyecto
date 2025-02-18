@@ -1,10 +1,16 @@
 <?php
+
+namespace View;
+
+use Controllers\Login_controlador;
+
 include('..' . DIRECTORY_SEPARATOR . 'Config' . DIRECTORY_SEPARATOR . 'Conectar.php');
 include('..' . DIRECTORY_SEPARATOR . 'Model' . DIRECTORY_SEPARATOR . 'login_modelo.php');
 include('..' . DIRECTORY_SEPARATOR . 'Controller' . DIRECTORY_SEPARATOR . 'login_controlador.php');
+$login_controlador = new Login_controlador();
 session_start();
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    (new loginController)->login($_POST['correo'], $_POST['password']);
+    $login_controlador->login($_POST['correo'], $_POST['password']);
 }
 
 ?>

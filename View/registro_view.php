@@ -1,7 +1,10 @@
 <?php
-include('..'. DIRECTORY_SEPARATOR .'Config'. DIRECTORY_SEPARATOR .'Conectar.php');
-include('..'. DIRECTORY_SEPARATOR .'Model'. DIRECTORY_SEPARATOR .'registro_modelo.php');
-include('..'. DIRECTORY_SEPARATOR .'Controller'. DIRECTORY_SEPARATOR .'registro_controlador.php');
+
+namespace View;
+
+include('..' . DIRECTORY_SEPARATOR . 'Config' . DIRECTORY_SEPARATOR . 'Conectar.php');
+include('..' . DIRECTORY_SEPARATOR . 'Model' . DIRECTORY_SEPARATOR . 'registro_modelo.php');
+include('..' . DIRECTORY_SEPARATOR . 'Controller' . DIRECTORY_SEPARATOR . 'registro_controlador.php');
 
 ?>
 
@@ -30,7 +33,8 @@ include('..'. DIRECTORY_SEPARATOR .'Controller'. DIRECTORY_SEPARATOR .'registro_
             <div class="form-group">
                 <label for="apellidos">Apellidos</label>
                 <input type="text" id="apellidos" name="apellidos" required class="form-control"
-                    value="<?php echo isset($_POST['apellidos']) ? $_POST['apellidos'] : ''; ?>" placeholder="Apellidos" />
+                    value="<?php echo isset($_POST['apellidos']) ? $_POST['apellidos'] : ''; ?>"
+                    placeholder="Apellidos" />
             </div>
             <div class="form-group">
                 <label for="fecha_nacimiento">Fecha de Nacimiento</label>

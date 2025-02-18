@@ -1,0 +1,41 @@
+
+body {
+    background-color: #f8f9fa;
+    font-family: Arial, sans-serif;
+}
+
+.header {
+    background-color: #343a40;
+    color: #ffffff;
+    padding: 20px;
+}
+
+.header h1 {
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+.module {
+    background-color: #ffffff;
+    border: 1px solid #dee2e6;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 30px;
+    border-radius: 5px;
+}
+
+.module-header {
+    border-bottom: 1px solid #dee2e6;
+    margin-bottom: 20px;
+}
+
+.module-header h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+.module-header button {
+    font-size: 16px;
+    font-weight: bold;
+}

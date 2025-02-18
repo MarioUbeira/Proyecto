@@ -1,3 +1,7 @@
+* {
+  margin: 0px;
+}
+
 .separador {
   text-align: center;
   border-bottom: 1px solid rgba(158, 158, 158, 0.308);
@@ -155,10 +159,11 @@
   text-decoration: none;
   display: inline-block;
   border-radius: 5px;
+  margin-top: 10%;
 }
 
 .textoRev button:hover {
-  transition: background-color .8s;
+  transition: background-color 0.8s;
   background-color: #018273;
 }
 
@@ -192,7 +197,8 @@
   display: flex;
 }
 
-.button button,.trollButton {
+.button button,
+.trollButton {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-weight: bolder;
   border: none;
@@ -202,16 +208,18 @@
   display: inline-block;
   border-radius: 5px;
   margin: 1%;
+  cursor: pointer;
 }
-
 
 .troll {
   display: flex;
   width: 70%;
+  cursor: pointer;
 }
 
 .fav {
   width: 15%;
+  cursor: pointer;
 }
 
 .trollButton {
@@ -226,16 +234,17 @@
 }
 
 .favButton:hover {
-  transition: background-color .8s;
+  transition: background-color 0.8s;
   background-color: rgb(185, 17, 51);
 }
 
 .trollButton:hover {
-  transition: background-color .8s;
+  transition: background-color 0.8s;
   background-color: #018273;
+  cursor: pointer;
 }
 
-input[type=number] {
+input[type="number"] {
   border: none;
   border-bottom: 2px solid #018273;
   border-radius: 5px;
@@ -243,13 +252,13 @@ input[type=number] {
   color: #333;
 }
 
-input[type=number]:focus {
+input[type="number"]:focus {
   outline: none;
   border-bottom: 2px solid #00b3aa;
 }
 
-input[type=number]::-webkit-inner-spin-button {
-  opacity: 1
+input[type="number"]::-webkit-inner-spin-button {
+  opacity: 1;
 }
 
 .producto label {
@@ -300,6 +309,9 @@ input[type=number]::-webkit-inner-spin-button {
     width: 30%;
   }
 
+  .textoRev button {
+    margin-top: 3%;
+  }
 }
 
 /* Estilos para dispositivos móviles */
@@ -311,6 +323,10 @@ input[type=number]::-webkit-inner-spin-button {
 
   .item {
     flex: 0 0 30%;
+  }
+
+  .textoRev button {
+    margin-top: 3%;
   }
 
   .contenedorRevista {
@@ -360,29 +376,51 @@ input[type=number]::-webkit-inner-spin-button {
 
 #mainBtn:hover {
   background-color: #006156;
-  transition: background-color .8s;
+  transition: background-color 0.8s;
 }
 
+/* Estilos para el botón principal */
+#mainBtn {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+#mainBtn:hover {
+  background-color: #0062cc;
+}
+
+/* Estilos para el submenú */
 #submenu {
-  position: fixed;
-  bottom: 60px;
-  left: 10px;
-  z-index: 9999;
-  display: none;
+  background-color: #f8f9fa;
+  border: 1px solid #dee2e6;
+  border-radius: 5px;
+  padding: 10px;
+  position: absolute;
+  top: 40px;
+  left: 0;
+  z-index: 1;
 }
 
 #submenu button {
-  display: block;
-  background-color: #018273;
-  color: white;
+  background-color: #fff;
   border: none;
-  outline: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 14px;
   cursor: pointer;
-  padding: 10px;
-  margin-bottom: 5px;
 }
 
 #submenu button:hover {
-  background-color: #006156;
-  transition: background-color .8s;
+  background-color: #f1f1f1;
+}
+
+.alert-info {
+  color: #0c5460;
+  background-color: #d1ecf1;
+  border-color: #bee5eb;
 }
